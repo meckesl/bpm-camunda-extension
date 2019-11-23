@@ -132,6 +132,12 @@
 
     <!-- Add your own dependencies here, if in compile scope, they are added to the war -->
 
+    <dependency>
+      <groupId>com.github.kkuegler</groupId>
+      <artifactId>human-readable-ids-java</artifactId>
+      <version>0.1</version>
+    </dependency>
+
   </dependencies>
 
   <repositories>

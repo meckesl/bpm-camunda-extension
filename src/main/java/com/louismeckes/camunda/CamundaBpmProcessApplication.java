@@ -14,7 +14,7 @@ import org.camunda.bpm.engine.ProcessEngine;
 @ProcessApplication
 public class CamundaBpmProcessApplication extends ServletProcessApplication {
 
-  private static final String PROCESS_DEFINITION_KEY = "camunda";
+  private static final String PROCESS_DEFINITION_KEY = "lolcamunda";
 
   /**
    * In a @PostDeploy Hook you can interact with the process engine and access 
@@ -24,10 +24,9 @@ public class CamundaBpmProcessApplication extends ServletProcessApplication {
   public void onDeploymentFinished(ProcessEngine processEngine) {
 
     // start an initial process instance
-	//    Map<String, Object> variables = new HashMap<String, Object>();
-	//    variables.put("name", "John");
-	//    
-	//    processEngine.getRuntimeService().startProcessInstanceByKey(PROCESS_DEFINITION_KEY, variables);
+	    Map<String, Object> variables = new HashMap<String, Object>();
+	    variables.put("name_of_the_process", "Louis (lolcamunda)");
+	    processEngine.getRuntimeService().startProcessInstanceByKey(PROCESS_DEFINITION_KEY, variables);
 	  
   }
 
