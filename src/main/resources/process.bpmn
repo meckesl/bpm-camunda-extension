@@ -32,9 +32,6 @@
     <bpmn:sequenceFlow id="SequenceFlow_1azqr2q" sourceRef="Task_1mufaqh" targetRef="Task_0qo5ddj" />
     <bpmn:userTask id="Task_1mufaqh" name="Hi">
       <bpmn:extensionElements>
-        <camunda:inputOutput>
-          <camunda:inputParameter name="Input_1mru19h" />
-        </camunda:inputOutput>
         <camunda:formData>
           <camunda:formField id="coolitude" label="Is it cool ?" type="boolean" />
         </camunda:formData>
